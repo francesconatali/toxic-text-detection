@@ -1,0 +1,34 @@
+.text-toxic-green {
+  --tw-text-opacity: 1;
+  color: rgb(92 228 136 / var(--tw-text-opacity));
+}
+
+.comment {
+  border: none;
+  border-bottom: 1px solid #888888;
+  min-height: 25px;
+  display: block;
+  padding: 5px;
+}
+
+.comment {
+  transition: opacity 500ms ease-in-out;
+}
+
+.processing {
+  opacity: 0.3;
+  filter: grayscale(1);
+}
+
+#commentsList .toxic {
+  color: white;
+  background-color: rgb(255 75 75);
+}
+
+#commentsList .toxic::after {
+  content: "⚠";
+  margin: -17px 4px;
+  zoom: 2;
+  float: right;
+  color: white;
+}
