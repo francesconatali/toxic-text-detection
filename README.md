@@ -1,5 +1,9 @@
 # Spam & Toxic Text Detection
-### Using Machine Learning to detect irrelevant and inappropriate text, entirely in the browser.
+### Using Machine Learning to detect irrelevant and inappropriate text, entirely in the browser.  
+  
+***
+Try it out live in the browser 👉🏻 [(link)](https://francesconatali.com/personalprojects/ML/toxic-text-detection/)
+***
 
 #### What is toxic text? 🤬
 Anything disrespectful, abusive, unpleasant, harmful, and/or simply irrelevant (SPAM). Detecting toxic text directly in the browser allows you to filter it out at the origin, even before it reaches your servers.
@@ -12,9 +16,6 @@ The model is trained using the [Model Maker's average word embedding algorithm](
 
 #### Future improvements 🚀
 Currently the model only supports **English**. It would be great to add support for other languages in the future. The only challenge is to find good datasets to train the model on. Also, at present, for maximum accuracy the model can validate no more than **20 words** at a time. This is not much of a limitation though, as you can simply split a long text into smaller chunks and validate each one. Although great care has been put into compiling a comprehensive training dataset, inevitably there might be some false positives and negatives. If you find any, please do let me know, or even better, submit a pull request on the CSV file `trainingdataset/toxictext_trainingdata.csv`.
-
-#### Open source
-The entire code and files are available here on GitHub so feel free to have a look!
 
 #### How to use the model in your own projects
 Simply copy the entire `model` folder in your project root directory. The folder includes these four files:
