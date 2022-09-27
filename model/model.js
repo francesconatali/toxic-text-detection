@@ -1,9 +1,6 @@
 /* 
   This file contains the code for the Machine Learning model.
 
-  !! There should be no reason for you to change anything here, 
-  apart from the following two files' name/path if you need to update them.
-
   Note: this file has to be loaded using the type="module" attribute,
   eg. <script type="module" src="..."></script>
 */
@@ -48,7 +45,7 @@ window.loadAndPredict = async function loadAndPredict(inputText) {
   let toxiticyLevel = dataArray[1] * 100;
 
   // Print the Toxiticy level for inspection.
-  // console.log('Toxiticy level: ' + toxiticyLevel);
+  console.log('Toxiticy level: ' + toxiticyLevel);
 
   return toxiticyLevel;
 }
