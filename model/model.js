@@ -42,12 +42,12 @@ window.loadAndPredict = async function loadAndPredict(inputText) {
   // dataArray[1] contains the probability of the text being toxic
   // and it can be converted to a percentage by multiplying by 100
   // to make it easier to read and handle.
-  let toxiticyLevel = dataArray[1] * 100;
+  let toxicityLevel = dataArray[1] * 100;
 
   // Print the Toxiticy level for inspection.
-  console.log('Toxiticy level: ' + toxiticyLevel);
+  console.log('Toxiticy level: ' + toxicityLevel);
 
-  return toxiticyLevel;
+  return toxicityLevel;
 }
 
 /** 

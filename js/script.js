@@ -47,12 +47,12 @@ function handleCommentPost() {
       
       // loadAndPredict (see model.js) is asynchronous so I use the then 
       // keyword to await a result before continuing.
-      loadAndPredict(currentComment).then(function(toxiticyLevel) {
+      loadAndPredict(currentComment).then(function(toxicityLevel) {
         // Reset class styles ready for the next comment.
         POST_COMMENT_BTN.classList.remove(PROCESSING_CLASS);
         COMMENT_TEXT.classList.remove(PROCESSING_CLASS);
         // Act on the result
-        if (toxiticyLevel >= TOXIC_THRESHOLD) {
+        if (toxicityLevel >= TOXIC_THRESHOLD) {
           // Visually mark the text as toxic.
           div.classList.add(TOXIC_CLASS);
         } else {
